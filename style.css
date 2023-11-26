@@ -5,7 +5,39 @@
     box-sizing: border-box;
 }
 
+
+
 .blok
 {
     background-color: blue;
+}
+
+
+.textstyle
+{
+    font-weight: 600;
+    font-style: italic;
+    color: white;
+}
+
+
+.navbar-nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mbottom
+{
+    margin-bottom: 15px;
+}
+
+.tlo{
+    
+}
+
+.container
+{
+    background-image: url('./img/tlo2.jpeg');
 }
