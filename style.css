@@ -43,7 +43,7 @@ body
 
 .bgimg
 {
-    background-image: url('./img/tlo2.jpeg');
+    background-image: url('./img/tlo2.png');
     background-attachment: fixed;
 }
 
@@ -61,4 +61,9 @@ body
 .fullsize
 {
     height: 100vh;
+}
+
+.color-dark
+{
+    color: black;
 }
