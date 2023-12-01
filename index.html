@@ -11,21 +11,101 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div class="container text-white">
-
-        <div class="row d-flex justify-content-around align-items-center">
+    <div class="container text-white fullsize">
+        <div class="row">
         <div class="col-12 mbottom">
-            <nav class="navbar navbar-expand-sm bg-primary textstyle p-2 ">
+            <nav class="navbar navbar-expand-sm bg-primary textstyle p-2">
                 <div class="container-fluid">
-                  <a class="navbar-brand" href="#">HIGH TECH INDUSTRY</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="#">HIGH TECH INDUSTRY</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav navstyles">
                       <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                       <a class="nav-link text-white" href="https://www.youtube.com/">Youtube</a>
                       <a class="nav-link text-white" href="https://www.google.com/">Google</a>
+
+                      <div>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Zaloguj
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-primary-emphasis">
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Imię</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Nazwisko</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="" required>
+                  
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Nazwa użytkownika</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Proszę wpisać nazwę użytkownika.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Miasto</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Proszę wpisać miasto.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Płeć</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Wybierz</option>
+                    <option>Mężczyzna</option>
+                    <option>Kobieta</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Proszę wpisać nazwę użytkownika.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Kod pocztowy</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Zaakceptuj warunki regulaminu
+                    </label>
+                    <div class="invalid-feedback">
+                      Przed kontynuowaniem konieczne jest zaakceptowanie <a href="">regulaminu</a> korzystania z portalu pracownika.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Zarejestruj</button>
+                </div>
+              </form>
+      </div>
+    </div>
+  </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -33,12 +113,16 @@
         </div>
 
 
-          <div class="col-10 col-sm-4 col-md-4 col-lg-4 m-2">
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
             <h5>Lista nowych pracowników:</h5>
-            <ul class="list-group p-4">
+            <ul class="list-group p-3">
                 <li class="list-group-item">Katarzyna</li>
                 <li class="list-group-item">Jerzy</li>
                 <li class="list-group-item">Michał</li>
+                <li class="list-group-item">Władysław</li>
+                <li class="list-group-item">Artur</li>
+                <li class="list-group-item">Władysław</li>
+                <li class="list-group-item">Artur</li>
                 <li class="list-group-item">Władysław</li>
                 <li class="list-group-item">Artur</li>
               </ul>
@@ -46,40 +130,17 @@
 
 
 
-          <div class="col-10 col-sm-4 col-md-4 col-lg-6">
-            <h3>Zadanie 2</h3>
-          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+            <h3>Pracownik miesiąca</h3>
+            
+            <div class="workerbox"><img class="workerimg" src="./img/zdjecia_pracownikow/katarzyna.jpg" alt=""></div>
+          </div> 
 
-
-
-          <div class="col-10 col-sm-4 col-md-4 col-lg-6">
-            <h3>Zadanie 3</h3>
-          </div>
-
-
-
-          <div class="col-10 col-sm-4 col-md-4 col-lg-6">
-            <h3>Zadanie 4</h3>
-          </div>
-
-
-
-          <div class="col-10 col-sm-4 col-md-4 col-lg-6">
-            <h3>Zadanie 5</h3>
-          </div>
-
-
-
-          <div class="col-10 col-sm-4 col-md-4 col-lg-6">
-            <h3>Zadanie 6</h3>
-          </div>
-
-          
-          <!-- Dodaj więcej kolumn, jeśli jest to konieczne -->
         </div>
       </div>
       
     
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </html>

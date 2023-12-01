@@ -41,3 +41,29 @@
 {
     background-image: url('./img/tlo2.jpeg');
 }
+
+.workerbox
+{
+    display: flex;
+}
+
+.workerimg
+{
+    width: 100%
+}
+
+.modalsize
+{
+    width: 50vh;
+    height: 50vh;
+}
+
+.fullsize
+{
+    height: 80vh;
+}
+
+.clr
+{
+    background-color: rebeccapurple;
+}
