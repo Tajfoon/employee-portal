@@ -1,3 +1,5 @@
+const current_dateField = document.querySelector('#currentDate');
+
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (() => {
     'use strict'
@@ -27,5 +29,9 @@
     now.getFullYear()
   ];
 
-  console.log(`${day}-${month}-${year}`);
+  let current_date = `${day}-${month}-${year}`;
+  current_dateField.textContent = current_date;
+
+
+
   
