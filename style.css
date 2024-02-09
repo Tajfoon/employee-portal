@@ -63,6 +63,11 @@ body
     height: 100vh;
 }
 
+.fullWidth
+{
+    width: 100%;
+}
+
 .color-dark
 {
     color: black;

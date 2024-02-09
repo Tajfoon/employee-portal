@@ -17,3 +17,15 @@
       }, false)
     })
   })()
+
+  const now = new Date();
+
+  const [day, month, year] = [
+    String(now.getDate()).padStart(2, '0'),
+    String(now.getMonth()+1).padStart(2, '0'),
+    // Padstart porównuje wskazanego stringa póki nie spełni określonego rezultatu.
+    now.getFullYear()
+  ];
+
+  console.log(`${day}-${month}-${year}`);
+  

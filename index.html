@@ -13,26 +13,68 @@
 <body class="bgimg">
     <div class="container text-white fullsize d-flex">
         <div class="row justify-content-around">
+<!-- NAV START -->
         <div class="col-12 mbottom">
-            <nav class="navbar navbar-expand-sm bg-primary textstyle p-2">
+            <nav class="navbar navbar-expand-sm bg-primary textstyle p-2 m-4">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">HIGH TECH INDUSTRY</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                      </button>
-                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav navstyles">
+                     <div class="collapse navbar-collapse justify-content-around fullWidth" id="navbarNavAltMarkup">
+                    <div class="navbar-nav navstyles fullWidth">
                       <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                       <a class="nav-link text-white" href="https://www.youtube.com/">Youtube</a>
                       <a class="nav-link text-white" href="https://www.google.com/">Google</a>
+                      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        Zaloguj
+                      </button>
+                      
+                     <div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </div>
+<!-- NAV END -->
 
-                      <div>
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Zarejestruj
-  </button>
-  
-  <!-- Modal beggining -->
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Zaloguj</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-black ">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Understood</button>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Zarejestruj</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal end -->
+<!-- Register Modal beggining -->
   <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg shadow-md">
       <div class="modal-content">
@@ -105,15 +147,12 @@
       </div>
     </div>
   </div>
-                     
+      <!-- Register Modal end -->    
 
 </div>
- <!-- Modal end -->
-                    </div>
-                  </div>
-                </div>
-              </nav>
-        </div>
+ 
+
+
 
         <!-- News -->
 
